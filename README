@@ -1,4 +1,4 @@
-Proyecto para la pruEba de API REST
-Para este proyecto se creo una base de datos local con una tabla de 4 columnas.
+Proyecto para la prueba de API REST
+Para este proyecto se creo una base de datos local con una tabla de 4 columnas con el script que esta también en este mismo proyecto.
 Para manejar la base de datos desde C# se uso Entity Framework Core para hacer el contexto de la base de datros y modelar todo.
 Para probar la api se uso Postman, este sirve para mandar peticiones a la api
