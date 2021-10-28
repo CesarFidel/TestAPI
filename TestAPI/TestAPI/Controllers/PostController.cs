@@ -11,5 +11,14 @@ namespace TestAPI.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
+        [HttpGet]
+        public IEnumerable<Models.Post> GetAllPosts()
+        {
+            using (var db = new Models.testAPIContext())
+            {
+                IEnumerable<Models.Post> posts = db.Posts.ToList();
+                return posts;
+            }
+        }
     }
 }

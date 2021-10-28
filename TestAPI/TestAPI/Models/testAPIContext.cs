@@ -34,18 +34,11 @@ namespace TestAPI.Models
 
             modelBuilder.Entity<Post>(entity =>
             {
-                entity.HasKey(e => e.UserId)
-                    .HasName("PK__Post__1788CC4CB6E41E13");
-
                 entity.ToTable("Post");
-
-                entity.Property(e => e.UserId).ValueGeneratedNever();
 
                 entity.Property(e => e.Boby)
                     .HasMaxLength(255)
                     .IsUnicode(false);
-
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Title)
                     .HasMaxLength(255)
